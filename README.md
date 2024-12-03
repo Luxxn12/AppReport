@@ -1,4 +1,8 @@
 # 📱 Pencatat Keuangan Harian  
+<div align="center" style="">
+<img src="./assets/apk.png" alt="Banner" width="300" />
+
+</div>
 
 **Pencatat Keuangan Harian** adalah aplikasi mobile sederhana yang dirancang untuk membantu pengguna mencatat, mengelola, dan melacak pengeluaran harian mereka. Aplikasi ini memungkinkan pengguna untuk memahami dan mengontrol kebiasaan finansial dengan lebih baik.  
 
@@ -29,3 +33,11 @@
 - **Moment.js**: Untuk memformat dan menampilkan tanggal.  
 
 ---
+
+## Screenshots AppReport
+
+![App Screenshot](./assets/1.jpeg)
+![App Screenshot](./assets/2.jpeg)
+![App Screenshot](./assets/3.jpeg)
+![App Screenshot](./assets/4.jpeg)
+![App Screenshot](./assets/5.jpeg)
