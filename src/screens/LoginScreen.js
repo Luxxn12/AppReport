@@ -11,13 +11,17 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    if (username === "erni" && password === "261120") {
+    const storedUsername = (await AsyncStorage.getItem("username")) || "AppReport";
+    const storedPassword = (await AsyncStorage.getItem("password")) || "2024";
+  
+    if (username === storedUsername && password === storedPassword) {
       await AsyncStorage.setItem("userToken", "loggedin");
       navigation.replace("Home");
     } else {
       alert("Username atau Password salah!");
     }
   };
+  
 
   return (
     <View style={styles.container}>

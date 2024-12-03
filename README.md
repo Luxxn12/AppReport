@@ -24,6 +24,12 @@
 - **🔒 Logout**  
   Amankan data Anda dengan fitur logout.  
 
+- **🔐 Login dengan Kredensial Default**
+Masuk menggunakan username AppReport dan password 2024.
+
+- **✏️ Ubah Username dan Password**
+Sesuaikan kredensial Anda melalui fitur pengaturan yang aman.
+
 ---
 
 
@@ -41,3 +47,5 @@
 ![App Screenshot](./assets/3.jpeg)
 ![App Screenshot](./assets/4.jpeg)
 ![App Screenshot](./assets/5.jpeg)
+![App Screenshot](./assets/6.jpeg)
+![App Screenshot](./assets/7.jpeg)

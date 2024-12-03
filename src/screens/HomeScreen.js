@@ -60,10 +60,7 @@ const HomeScreen = ({ navigation }) => {
     }
   };
 
-  const handleLogout = async () => {
-    await AsyncStorage.removeItem("userToken");
-    navigation.replace("Login");
-  };
+
 
   const handleDelete = async (id) => {
     const filteredExpenses = expenses.filter((item, index) => index !== id);
@@ -86,7 +83,11 @@ const HomeScreen = ({ navigation }) => {
           month: "long",
           year: "numeric",
         })}
-        : <Text style={styles.boldText}>Rp {totalMonthlyExpense.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}</Text>
+        :{" "}
+        <Text style={styles.boldText}>
+          Rp{" "}
+          {totalMonthlyExpense.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+        </Text>
       </Text>
       <View>
         <CustomButton
@@ -116,7 +117,8 @@ const HomeScreen = ({ navigation }) => {
           <View style={styles.item}>
             <View>
               <Text>
-                {item.category}: Rp {item.amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                {item.category}: Rp{" "}
+                {item.amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
               </Text>
               <Text style={styles.date}>
                 {new Date(item.date).toLocaleDateString()}
@@ -158,10 +160,10 @@ const HomeScreen = ({ navigation }) => {
           iconColor="#15B7B9"
         />
         <ActionButton
-          iconName="logout"
-          title="Logout"
-          onPress={handleLogout}
-          iconColor="red"
+          iconName="person"
+          title="Profile"
+          onPress={() => navigation.navigate("Profile")}
+          iconColor="#15B7B9"
         />
       </View>
     </View>

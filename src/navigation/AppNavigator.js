@@ -5,6 +5,8 @@ import LoginScreen from '../screens/LoginScreen';
 import HomeScreen from '../screens/HomeScreen';
 import AddExpenseScreen from '../screens/AddExpenseScreen';
 import EditExpense from '../screens/EditExpense';
+import SettingsScreen from '../screens/SettingsScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +20,8 @@ const AppNavigator = () => {
         }} />
         <Stack.Screen name="AddExpense" component={AddExpenseScreen} options={{ title: 'Tambah Pengeluaran' }} />
         <Stack.Screen name="EditExpense" options={{ title: 'Edit Pengeluaran' }} component={EditExpense} />
+        <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
